@@ -1,7 +1,10 @@
 <?php
+use App\Livewire\MarcaIndex;
+use App\Livewire\ModeloIndex;
+use App\Livewire\ColorIndex;
+use App\Livewire\VehiculoIndex;
 
-use Illuminate\Support\Facades\Route;
-
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/marcas', MarcaIndex::class);
+Route::get('/modelos', ModeloIndex::class);
+Route::get('/colores', ColorIndex::class);
+Route::get('/vehiculos', VehiculoIndex::class);
